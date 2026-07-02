@@ -3,16 +3,17 @@ import { AxiosAPI } from "@/app/library/helper";
 import { setUser } from "@/app/redux/features/userSlice";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+
 
 const AuthPage = () => {
   const [isLogin, setIsLogin] = useState(true); // Defaulting to false to show the Register state from your image first
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const dispatcher = useDispatch();
-  const cartdata = JSON.parse(localStorage.getItem("cart"))
+  const cartdata = useSelector((state)=>state.cart)
   const router = useRouter();
-  console.log(cartdata)
+ console.log(cartdata)
 
   const userLogin = (e) => {
     e.preventDefault();

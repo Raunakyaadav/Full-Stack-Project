@@ -14,7 +14,7 @@ const ProductCard = ({product}) => {
   <div >
    <Link href={`/product/${product._id}`} className="w-full h-32 sm:h-36  rounded-xl overflow-hidden flex items-center justify-center mb-3">
     <img
-      src={process.env.NEXT_PUBLIC_API_URL+`/images/product/${product.thumbnail}`}
+      src={process.env.NEXT_PUBLIC_BASE_URL+`/images/product/${product.thumbnail}`}
       alt={product.name}
       className="w-full h-full object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-102"
     />
