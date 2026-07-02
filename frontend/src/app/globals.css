@@ -1,0 +1,79 @@
+@import "tailwindcss";
+*{
+    font-family: "Inter", sans-serif;
+}
+
+.responsive-logo {
+  width: 100px; 
+  height: auto; 
+  display: block;
+}
+
+
+@media (min-width: 768px) {
+  .responsive-logo {
+    width: 130px; 
+    height: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-logo {
+    width: 150px;  
+    height: 48px;  
+  }
+}
+
+button{
+    cursor: pointer;
+     transition: 0.1s ease-in-out;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* Mobile screens ke liye cart section fix */
+@media screen and (max-width: 767px) {
+  .cart-section {
+    position: absolute;
+    right: 27px;
+    top: 12px;
+    width: auto;
+    
+  }
+}
+@media screen and (max-width: 1000px) {
+  .hide {
+   display:none;
+    
+  }
+}
+@media screen and (max-width: 1400px) and (min-width:700px) {
+  .sm-laptop1 {
+   max-width:800px ;
+   max-height:290px ;
+    
+  }
+}
+@media screen and (max-width: 1400px) {
+  .sm-laptop2 {
+   max-width:400px ;
+   max-height:290px ;
+    
+  }
+}
+
+
+input{
+    font-size: 17.4px;
+}
+@media screen and (max-width :1024px){
+.headerNav{
+  font-size: 12px;
+}
+}
+
+
+
+
